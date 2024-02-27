@@ -8,10 +8,10 @@ const Publisher = new Redis(
   "rediss://default:AVNS_Fl33i0wT9Y1O6k0rREo@redis-d4b013c-sanjay29218-5c63.a.aivencloud.com:28267"
 );
 const s3 = new S3Client({
-  region: "eu-north-1",
+  region: process.env.REGION,
   credentials: {
-    accessKeyId: "AKIAYS2NVRTAVHXJTGKR",
-    secretAccessKey: "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",
+    accessKeyId: process.env.ACCESS_KEY_ID,
+    secretAccessKey: process.env.SECRETACCESSKEY,
   },
 });
 const PROJECT_ID = process.env.PROJECT_ID;
