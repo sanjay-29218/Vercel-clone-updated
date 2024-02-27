@@ -1,0 +1,12 @@
+/api-server/node_modules
+
+/frontend-nextjs/node_modules
+
+/s3-reverse-proxy/node_modules
+/s3-reverse-proxy/dist
+
+/vercel-build-server/node_modules
+/vercel-build-server/dist
+
+/api-server/dist
+
